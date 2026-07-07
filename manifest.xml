@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
   <Id>999cbab1-26eb-4496-a128-75e7d6806192</Id>
-  <Version>1.0.4.0</Version>
+  <Version>1.0.5.0</Version>
   <ProviderName>TraceForge</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="TraceForge"/>
@@ -97,7 +97,7 @@
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="GetStarted.Title" DefaultValue="TraceForge is ready"/>
-        <bt:String id="TraceForgeTab.Label" DefaultValue="TraceForge v1.0.4"/>
+        <bt:String id="TraceForgeTab.Label" DefaultValue="TraceForge v1.0.5"/>
         <bt:String id="MapGroup.Label" DefaultValue="Map"/>
         <bt:String id="DeltaGroup.Label" DefaultValue="Delta"/>
         <bt:String id="ExploreGroup.Label" DefaultValue="Formula"/>
