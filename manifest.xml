@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
   <Id>9f96a9e7-4c70-4d9b-96c3-7f8d5d9f0001</Id>
-  <Version>1.1.1.0</Version>
+  <Version>1.1.2.0</Version>
   <ProviderName>TraceForge</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="TraceForge"/>
@@ -33,6 +33,12 @@
                   <Supertip><Title resid="FormulaMapTurbo.Label"/><Description resid="FormulaMapTurbo.Tooltip"/></Supertip>
                   <Icon><bt:Image size="16" resid="ConsIc.16x16"/><bt:Image size="32" resid="ConsIc.32x32"/><bt:Image size="80" resid="ConsIc.80x80"/></Icon>
                   <Action xsi:type="ExecuteFunction"><FunctionName>runFormulaMapTurbo</FunctionName></Action>
+                </Control>
+                <Control xsi:type="Button" id="MapLegendButton">
+                  <Label resid="MapLegend.Label"/>
+                  <Supertip><Title resid="MapLegend.Label"/><Description resid="MapLegend.Tooltip"/></Supertip>
+                  <Icon><bt:Image size="16" resid="PaneIc.16x16"/><bt:Image size="32" resid="PaneIc.32x32"/><bt:Image size="80" resid="PaneIc.80x80"/></Icon>
+                  <Action xsi:type="ExecuteFunction"><FunctionName>showFormulaMapLegend</FunctionName></Action>
                 </Control>
               </Group>
               <Group id="DeltaGroup">
@@ -94,11 +100,12 @@
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="GetStarted.Title" DefaultValue="TraceForge is ready"/>
-        <bt:String id="TraceForgeTab.Label" DefaultValue="TraceForge v1.1.1"/>
+        <bt:String id="TraceForgeTab.Label" DefaultValue="TraceForge v1.1.2"/>
         <bt:String id="MapGroup.Label" DefaultValue="Map"/>
         <bt:String id="DeltaGroup.Label" DefaultValue="Delta"/>
         <bt:String id="ExploreGroup.Label" DefaultValue="Formula"/>
         <bt:String id="FormulaMapTurbo.Label" DefaultValue="Map Formulas"/>
+        <bt:String id="MapLegend.Label" DefaultValue="Map Legend"/>
         <bt:String id="CreateBaseDelta.Label" DefaultValue="Create Base + Delta"/>
         <bt:String id="ExploreFormula.Label" DefaultValue="Explore Formula"/>
         <bt:String id="DataFlow.Label" DefaultValue="Data Flow"/>
@@ -106,6 +113,7 @@
       <bt:LongStrings>
         <bt:String id="GetStarted.Description" DefaultValue="Open the TraceForge tab to run model review tools."/>
         <bt:String id="FormulaMapTurbo.Tooltip" DefaultValue="Create a compact formula map for the active sheet."/>
+        <bt:String id="MapLegend.Tooltip" DefaultValue="Explain Formula Map symbols."/>
         <bt:String id="CreateBaseDelta.Tooltip" DefaultValue="Create value-only Base and live Delta sheets for the active sheet."/>
         <bt:String id="ExploreFormula.Tooltip" DefaultValue="Inspect the selected formula as a tree with values and cell locations."/>
         <bt:String id="DataFlow.Tooltip" DefaultValue="Show sheet-to-sheet formula links and highlight linked formula cells."/>
