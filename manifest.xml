@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
-  <Id>999cbab1-26eb-4496-a128-75e7d6806192</Id>
-  <Version>1.1.0.0</Version>
+  <Id>9f96a9e7-4c70-4d9b-96c3-7f8d5d9f0001</Id>
+  <Version>1.1.1.0</Version>
   <ProviderName>TraceForge</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="TraceForge"/>
@@ -44,12 +44,6 @@
                   <Icon><bt:Image size="16" resid="SmFillIc.16x16"/><bt:Image size="32" resid="SmFillIc.32x32"/><bt:Image size="80" resid="SmFillIc.80x80"/></Icon>
                   <Action xsi:type="ExecuteFunction"><FunctionName>createBaseDelta</FunctionName></Action>
                 </Control>
-                <Control xsi:type="Button" id="RemoveBaseDeltaButton">
-                  <Label resid="RemoveBaseDelta.Label"/>
-                  <Supertip><Title resid="RemoveBaseDelta.Label"/><Description resid="RemoveBaseDelta.Tooltip"/></Supertip>
-                  <Icon><bt:Image size="16" resid="PaneIc.16x16"/><bt:Image size="32" resid="PaneIc.32x32"/><bt:Image size="80" resid="PaneIc.80x80"/></Icon>
-                  <Action xsi:type="ExecuteFunction"><FunctionName>removeBaseDelta</FunctionName></Action>
-                </Control>
               </Group>
               <Group id="ExploreGroup">
                 <Label resid="ExploreGroup.Label"/>
@@ -57,7 +51,7 @@
                 <Control xsi:type="Button" id="ExploreFormulaButton">
                   <Label resid="ExploreFormula.Label"/>
                   <Supertip><Title resid="ExploreFormula.Label"/><Description resid="ExploreFormula.Tooltip"/></Supertip>
-                  <Icon><bt:Image size="16" resid="Icon.16x16"/><bt:Image size="32" resid="Icon.32x32"/><bt:Image size="80" resid="Icon.80x80"/></Icon>
+                  <Icon><bt:Image size="16" resid="TraceIc.16x16"/><bt:Image size="32" resid="TraceIc.32x32"/><bt:Image size="80" resid="TraceIc.80x80"/></Icon>
                   <Action xsi:type="ExecuteFunction"><FunctionName>exploreFormula</FunctionName></Action>
                 </Control>
                 <Control xsi:type="Button" id="DataFlowButton">
@@ -90,6 +84,9 @@
         <bt:Image id="PaneIc.16x16" DefaultValue="https://vietkhai2710.github.io/traceforge-deploy/assets/icons/show-taskpane-16.png"/>
         <bt:Image id="PaneIc.32x32" DefaultValue="https://vietkhai2710.github.io/traceforge-deploy/assets/icons/show-taskpane-32.png"/>
         <bt:Image id="PaneIc.80x80" DefaultValue="https://vietkhai2710.github.io/traceforge-deploy/assets/icons/show-taskpane-80.png"/>
+        <bt:Image id="TraceIc.16x16" DefaultValue="https://vietkhai2710.github.io/traceforge-deploy/assets/icons/trace-precedents-16.png"/>
+        <bt:Image id="TraceIc.32x32" DefaultValue="https://vietkhai2710.github.io/traceforge-deploy/assets/icons/trace-precedents-32.png"/>
+        <bt:Image id="TraceIc.80x80" DefaultValue="https://vietkhai2710.github.io/traceforge-deploy/assets/icons/trace-precedents-80.png"/>
       </bt:Images>
       <bt:Urls>
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://vietkhai2710.github.io/traceforge-deploy"/>
@@ -97,13 +94,12 @@
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="GetStarted.Title" DefaultValue="TraceForge is ready"/>
-        <bt:String id="TraceForgeTab.Label" DefaultValue="TraceForge v1.1.0"/>
+        <bt:String id="TraceForgeTab.Label" DefaultValue="TraceForge v1.1.1"/>
         <bt:String id="MapGroup.Label" DefaultValue="Map"/>
         <bt:String id="DeltaGroup.Label" DefaultValue="Delta"/>
         <bt:String id="ExploreGroup.Label" DefaultValue="Formula"/>
         <bt:String id="FormulaMapTurbo.Label" DefaultValue="Map Formulas"/>
         <bt:String id="CreateBaseDelta.Label" DefaultValue="Create Base + Delta"/>
-        <bt:String id="RemoveBaseDelta.Label" DefaultValue="Remove Base + Delta"/>
         <bt:String id="ExploreFormula.Label" DefaultValue="Explore Formula"/>
         <bt:String id="DataFlow.Label" DefaultValue="Data Flow"/>
       </bt:ShortStrings>
@@ -111,7 +107,6 @@
         <bt:String id="GetStarted.Description" DefaultValue="Open the TraceForge tab to run model review tools."/>
         <bt:String id="FormulaMapTurbo.Tooltip" DefaultValue="Create a compact formula map for the active sheet."/>
         <bt:String id="CreateBaseDelta.Tooltip" DefaultValue="Create value-only Base and live Delta sheets for the active sheet."/>
-        <bt:String id="RemoveBaseDelta.Tooltip" DefaultValue="Remove the Base and Delta sheets for the active sheet."/>
         <bt:String id="ExploreFormula.Tooltip" DefaultValue="Inspect the selected formula as a tree with values and cell locations."/>
         <bt:String id="DataFlow.Tooltip" DefaultValue="Show sheet-to-sheet formula links and highlight linked formula cells."/>
       </bt:LongStrings>
